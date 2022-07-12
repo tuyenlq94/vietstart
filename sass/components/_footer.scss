@@ -1,0 +1,239 @@
+.tu-van {
+	position: relative;
+	background: var(--color-accent);
+	padding: 60px 0;
+	text-align: center;
+	margin-top: -4px;
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 31px;
+		margin: 0;
+		color: #fff;
+		font-weight: 400;
+	}
+
+	p {
+		font-size: 16px;
+		color: #fff;
+	}
+
+	#test-form {
+		display: none;
+	}
+}
+
+#test-form {
+	max-width: 450px !important;
+	margin: 0 auto;
+	padding: 25px !important;
+	font-size: 14px;
+	line-height: 30px !important;
+	color: #777;
+	border: 1px solid #eae6e6;
+	font-family: sans-serif;
+	background: #F7F7F7;
+
+	label {
+		color: #9C0000;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	input {
+		width: 100%;
+		border: 1px solid #CE0000;
+	}
+
+	input.wpcf7-submit {
+		cursor: pointer;
+		border: none;
+		color: #FFF;
+		padding: 10px 20px;
+		font-size: 18px;
+		outline: 0;
+		background: #9C0000;
+		width: auto;
+		margin-top: 15px;
+	}
+}
+
+.popup-tu-van {
+	text-align: center;
+}
+
+.popup-with-form {
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 2px 20px;
+	display: inline-flex;
+	width: auto;
+	border-radius: 28px;
+	margin-left: 0;
+	position: relative;
+	line-height: 34px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+	animation-name: example1;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+	&::before {
+		content: "";
+		display: block;
+		background: url('images/contact-ico.png') left no-repeat;
+		width: 35px;
+		height: 36px;
+		position: relative;
+		float: left;
+		margin-right: 10px;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@keyframes example1 {
+	0% {
+		margin-left: 6px;
+	}
+
+	100% {
+		margin-left: 0;
+	}
+}
+
+.site-footer {
+	background: #231f20;
+	color: #fff;
+	padding: 50px 0 30px;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-top: -4px;
+}
+
+.footer-collum {
+	position: relative;
+
+	h2.title {
+		font-weight: 700;
+		font-size: 15px;
+		margin: 0 0 30px;
+		color: #aaa;
+		text-align: left;
+		border-top: 0;
+		padding-top: 20px;
+		text-transform: uppercase;
+	}
+
+	.entry-content {
+		color: #a2a2a2;
+		font-size: 16px;
+		margin-bottom: 8px;
+
+		a {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+
+			&:hover {
+				color: #fff;
+			}
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			list-style: none;
+			margin-bottom: 10px;
+		}
+	}
+
+	p {
+		margin: 0 0 10px;
+	}
+}
+
+.sp-footer {
+	position: relative;
+	background: var(--color-accent);
+	font-size: 14px;
+	padding: 20px 0;
+	color: #fff;
+}
+
+.zalo-btn {
+	position: fixed;
+	bottom: 20%;
+	color: #fff;
+
+	img {
+		width: 44px;
+		position: relative;
+		-webkit-animation: phone-support-anim 1s infinite ease-in-out;
+		animation: phone-support-anim 1s infinite ease-in-out;
+		-webkit-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		bottom: 10px;
+	}
+}
+
+.fixed-bottom {
+	position: fixed;
+	right: 294px;
+	bottom: 0;
+	height: 35px;
+
+	.fixedbtm {
+		float: left;
+		margin-left: 5px;
+		background: var(--color-accent);
+		padding: 6px 12px 6px 5px;
+		border-radius: 5px 5px 0 0;
+		border-bottom: 0;
+	}
+
+	a {
+		color: #fff;
+		font-size: 17px;
+		font-weight: 600;
+		display: block;
+		position: relative;
+
+	}
+}
+
+@-webkit-keyframes phone-support-anim {
+
+	0%,
+	100%,
+	50% {
+		-webkit-transform: rotate(0) scale(1) skew(1deg)
+	}
+
+	10%,
+	30% {
+		-webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+	}
+
+	20%,
+	40% {
+		-webkit-transform: rotate(25deg) scale(1) skew(1deg)
+	}
+}
