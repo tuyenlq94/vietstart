@@ -11,9 +11,8 @@ get_header( 'home' );
 		the_post();
 		get_template_part( 'template-parts/home/banner' );
 		get_template_part( 'template-parts/home/service' );
-		get_template_part( 'template-parts/home/we-do' );
-		get_template_part( 'template-parts/home/projects' );
-		get_template_part( 'template-parts/home/partner' );
+		get_template_part( 'template-parts/home/products' );
+		get_template_part( 'template-parts/home/danh-gia' ); 
 	endwhile;
 	?>
 

@@ -163,3 +163,39 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+function vietstart_products() {
+	?>
+	<div class="products__item">
+		<div class="entry-thumbnail">
+			<a href="<?php the_permalink();?>"><?php the_post_thumbnail()?></a>
+		</div>
+		<div class="entry-title">
+			<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+		</div>
+	</div>
+	<?php
+}
+function vietstart_list_product($id) {
+	$args          = array(
+		'post_type' => 'san-pham',
+		'posts_per_page' => 9,
+		'order'	=> 'DESC',
+		'orderby'=>'ID',
+		'tax_query' => array( 
+			'relation' => 'AND',
+			array(
+				'taxonomy' => 'loai-san-pham',  
+				'field' => 'id',   
+				'terms' => array( $id ),
+			  ),
+		),
+	);
+	$the_query     = new WP_Query( $args );
+	if( $the_query->have_posts()):
+		while( $the_query->have_posts()):
+			$the_query->the_post();
+			vietstart_products();
+		endwhile;
+	endif;
+	wp_reset_postdata();
+}

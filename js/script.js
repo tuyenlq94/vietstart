@@ -116,6 +116,14 @@ jQuery( function ( $ ) {
 			rows: 0,
 			autoplaySpeed: 5000,
 		} );
+		$( '.customers__wrap' ).slick( {
+			slidesToShow: 3,
+			dots: false,
+			arrows: false,
+			autoplay: false,
+			rows: 0,
+			autoplaySpeed: 5000,
+		} );
 	};
 	function maginicpopup() {
 		$( '.popup-with-form' ).magnificPopup( {
@@ -158,6 +166,18 @@ jQuery( function ( $ ) {
 		} );
 	}
 
+	function tab() {
+		$( 'ul.tabs li' ).click( function () {
+			var tab_id = $( this ).attr( 'data-tab' );
+
+			$( 'ul.tabs li' ).removeClass( 'current' );
+			$( '.tab-content' ).removeClass( 'current' );
+
+			$( this ).addClass( 'current' );
+			$( "#" + tab_id ).addClass( 'current' );
+		} );
+	}
+
 	var wow = new WOW();
 	wow.init();
 
@@ -169,4 +189,5 @@ jQuery( function ( $ ) {
 	scrollToTop();
 	slickSlide();
 	maginicpopup();
+	tab();
 } );
