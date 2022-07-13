@@ -151,6 +151,28 @@ jQuery( function ( $ ) {
 		} );
 	}
 
+	function counter_number() {
+		var a = 0;
+		if ( $( 'body' ).hasClass( 'page-template-front-page' ) ) {
+			$( window ).scroll( function () {
+				var oTop = $( '.khac_biet__wrap' ).offset().top - window.innerHeight;
+				if ( a == 0 && $( window ).scrollTop() > oTop ) {
+					$( '.count' ).each( function () {
+						$( this ).prop( 'Counter', 0 ).animate( {
+							Counter: $( this ).text()
+						}, {
+							duration: 4000,
+							easing: 'swing',
+							step: function ( now ) {
+								$( this ).text( Math.ceil( now ) );
+							}
+						} );
+					} );
+					a = 1;
+				}
+			} );
+		};
+	}
 
 	function scrollToTop() {
 		var $window = $( window ),
@@ -190,4 +212,5 @@ jQuery( function ( $ ) {
 	slickSlide();
 	maginicpopup();
 	tab();
+	counter_number();
 } );

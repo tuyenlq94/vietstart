@@ -12,7 +12,9 @@ get_header( 'home' );
 		get_template_part( 'template-parts/home/banner' );
 		get_template_part( 'template-parts/home/service' );
 		get_template_part( 'template-parts/home/products' );
-		get_template_part( 'template-parts/home/danh-gia' ); 
+		get_template_part( 'template-parts/home/danh-gia' );
+		get_template_part( 'template-parts/home/khac-biet' );
+		get_template_part( 'template-parts/home/doi-tac' );
 	endwhile;
 	?>
 
