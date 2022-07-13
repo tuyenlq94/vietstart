@@ -50,6 +50,7 @@ function vietstart_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'vietstart' ),
+			'menu-2' => esc_html__( 'Blog', 'vietstart' ),
 		)
 	);
 
@@ -124,6 +125,17 @@ function vietstart_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Languages', 'vietstart' ),
 			'id'            => 'languages',
+			'description'   => esc_html__( 'Add widgets here.', 'vietstart' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'vietstart' ),
+			'id'            => 'sidebar',
 			'description'   => esc_html__( 'Add widgets here.', 'vietstart' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

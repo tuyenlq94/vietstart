@@ -199,3 +199,59 @@ function vietstart_list_product($id) {
 	endif;
 	wp_reset_postdata();
 }
+
+function vietstart_blog_post() {
+	?>
+	<div class="blog__item">
+		<div class="entry_thumbnail">
+			<a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
+		</div>
+		<div class="entry_title">
+			<p class="date"><?php echo get_the_date('d F Y');?></p>
+			<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+		</div>
+	</div>
+	<?php
+}
+function vietstart_list_post() {
+	?>
+	<div class="archive-post__item">
+		<div class="entry_thumbnail">
+			<a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
+		</div>
+		<div class="entry_title">
+			<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+			<div class="entry_excerpt"><?php the_excerpt();?></div>
+			<p class="date"><?php echo get_the_date('d F Y');?></p>
+		</div>
+	</div>
+	<?php
+}
+
+function vietstart_blog_cat($id, $name) {
+	$args    = array(
+		'post_type' => 'post',
+		'cat' => $id,
+		'posts_per_page' => 6,
+	);
+	$the_query     = new WP_Query( $args );
+	?>
+	<div class="blog-cat">
+		<div class="blog-cat__top">
+			<h2><?= $name;?></h2>
+			<a href="<?= get_category_link($id);?>">Xem thêm</a>
+		</div>
+		<div class="blog-cat__list">
+			<?php
+			if($the_query->have_posts()){
+				while($the_query->have_posts()) {
+					$the_query->the_post();
+					vietstart_blog_post();
+				}
+			}
+			wp_reset_postdata();
+			?>
+		</div>
+	</div>
+	<?php
+}

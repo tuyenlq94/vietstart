@@ -1,21 +1,19 @@
 <?php // @codingStandardsIgnoreLine
 /**
-	Template Name: Home
+	Template Name: Liên hệ
  */
-get_header( 'home' );
+get_header( );
 ?>
 <main id="primary" class="site-main">
 
 	<?php
 	while ( have_posts() ) :
 		the_post();
-		get_template_part( 'template-parts/home/banner' );
-		get_template_part( 'template-parts/home/service' );
-		get_template_part( 'template-parts/home/products' );
+		get_template_part( 'template-parts/home/breadcrumbs' );
+		get_template_part( 'template-parts/home/contact' );
 		get_template_part( 'template-parts/home/danh-gia' );
 		get_template_part( 'template-parts/home/khac-biet' );
 		get_template_part( 'template-parts/home/doi-tac' );
-		get_template_part( 'template-parts/home/about' );
 	endwhile;
 	?>
 

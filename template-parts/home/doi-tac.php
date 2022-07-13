@@ -1,6 +1,5 @@
 <?php
 $images = rwmb_meta( 'image_doi_tac', [ 'object_type' => 'setting' ], 'danh_gia' );
-var_dump( $images );
 ?>
 <section class="partner">
 	<div class="container">
