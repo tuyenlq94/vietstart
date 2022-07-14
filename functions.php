@@ -151,6 +151,7 @@ add_action( 'widgets_init', 'vietstart_widgets_init' );
  * Enqueue scripts and styles.
  */
 function vietstart_scripts() {
+	wp_enqueue_style('font-awesome', 'https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css', '', '4.7.0');
 	wp_enqueue_style( 'vietstart-animate', get_template_directory_uri() . '/css/animate.min.css' );
 	wp_enqueue_style( 'vietstart-magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css' );
 	wp_enqueue_style( 'vietstart-slick', get_template_directory_uri() . '/css/slick.css' );

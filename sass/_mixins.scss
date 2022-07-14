@@ -11,11 +11,13 @@
 }
 
 @mixin clearfix {
+
 	&:before,
 	&:after {
 		content: ' ';
 		display: table;
 	}
+
 	&:after {
 		clear: both;
 	}
@@ -25,10 +27,12 @@
 	&::-webkit-input-placeholder {
 		@content;
 	}
+
 	&::-moz-placeholder {
 		@content;
 		opacity: 1;
 	}
+
 	&:-ms-input-placeholder {
 		@content;
 	}
@@ -54,6 +58,7 @@
 @mixin has-dash-before-after {
 	position: relative;
 	padding: 0 30px;
+
 	&:after,
 	&:before {
 		content: '';
@@ -65,9 +70,11 @@
 		top: 50%;
 		transform: translate3d(0, -50%, 0);
 	}
+
 	&:before {
 		left: 0;
 	}
+
 	&:after {
 		right: 0;
 	}
@@ -76,6 +83,7 @@
 @mixin has-dash-before {
 	@include has-dash-before-after();
 	padding-right: 0;
+
 	&:after {
 		display: none;
 	}
@@ -85,36 +93,61 @@
 	@include has-dash-before-after();
 	padding-left: 0;
 	color: var(--color-accent);
+
 	&:before {
 		display: none;
 	}
 }
 
-@mixin button {
+@mixin title {
 	position: relative;
-    display: inline-block;
-    background: #2c3192;
-    height: 56px;
-    line-height: 56px;
-    text-align: center;
-    width: 197px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-	&:hover {
-		-webkit-transform: rotateX(90deg) translateY(-22px);
-    	transform: rotateX(90deg) translateY(-22px);
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 32px;
+	margin-top: 0;
+
+	&:after {
+		content: "";
+		display: block;
+		height: 2px;
+		background: url('images/line.png') no-repeat center;
+		top: 48px;
+		width: 10%;
+		left: 45%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
 	}
 }
+
+@mixin button {
+	position: relative;
+	display: inline-block;
+	background: #2c3192;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	width: 197px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	&:hover {
+		-webkit-transform: rotateX(90deg) translateY(-22px);
+		transform: rotateX(90deg) translateY(-22px);
+	}
+}
+
 @mixin before {
 	position: absolute;
 	top: 100%;
