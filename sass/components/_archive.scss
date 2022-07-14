@@ -1,3 +1,8 @@
+h1.title-archive {
+	font-size: 18px;
+	margin: 0 0 20px;
+}
+
 .archive-post {
 	position: relative;
 	padding: 60px 0 20px;
@@ -50,6 +55,35 @@
 
 		.entry_excerpt {
 			@include set-line(3);
+		}
+	}
+
+	&__products {
+		position: relative;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&__product {
+		.entry_title {
+			color: #424242;
+			max-height: 186px;
+			display: block;
+			overflow: hidden;
+			font-size: 15px;
+			margin-bottom: 20px;
+
+			h3 {
+				font-size: 15px;
+				font-weight: 400;
+				margin: 0;
+				text-align: center;
+			}
+
+			a {
+				text-decoration: none;
+			}
 		}
 	}
 }

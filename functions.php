@@ -51,6 +51,7 @@ function vietstart_setup() {
 		array(
 			'menu-1' => esc_html__( 'Primary', 'vietstart' ),
 			'menu-2' => esc_html__( 'Blog', 'vietstart' ),
+			'menu-3' => esc_html__( 'About', 'vietstart' ),
 		)
 	);
 

@@ -227,6 +227,18 @@ function vietstart_list_post() {
 	</div>
 	<?php
 }
+function vietstart_list_post_product() {
+	?>
+	<div class="archive-post__product">
+		<div class="entry_thumbnail">
+			<a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
+		</div>
+		<div class="entry_title">
+			<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+		</div>
+	</div>
+	<?php
+}
 
 function vietstart_blog_cat($id, $name) {
 	$args    = array(
