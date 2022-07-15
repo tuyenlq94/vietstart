@@ -3,7 +3,7 @@
 	background: var(--color-accent);
 	padding: 60px 0;
 	text-align: center;
-	margin-top: -4px;
+	margin-top: -5px;
 
 	h2 {
 		text-transform: uppercase;
@@ -42,7 +42,8 @@
 		margin: 0;
 	}
 
-	input {
+	input,
+	select {
 		width: 100%;
 		border: 1px solid #CE0000;
 	}
@@ -117,7 +118,7 @@
 	padding: 50px 0 30px;
 	font-size: 14px;
 	line-height: 1.6;
-	margin-top: -4px;
+	margin-top: -6px;
 }
 
 .footer-collum {

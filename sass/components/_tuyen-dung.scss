@@ -1,0 +1,199 @@
+.banner-video {
+	position: relative;
+	background-color: #b8292f;
+
+	&__video {
+		video {
+			margin: 0;
+			margin-bottom: -6px;
+		}
+	}
+
+	&__title {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		color: #fff;
+		justify-content: center;
+
+		h1 {
+			font-size: 38px;
+			font-weight: 700;
+			color: #fff;
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.moi-truong {
+	position: relative;
+	background-image: url('images/bg2.jpg');
+	padding: 50px 0;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-attachment: scroll;
+	background-position: 0 100%;
+	background-color: #fff;
+
+	h2.title {
+		@include title;
+	}
+
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+
+	&__image {
+		width: 25%;
+	}
+
+	&__content {
+		width: 75%;
+
+		h3 {
+			font-size: 18px;
+			text-transform: none;
+			margin-bottom: 5px;
+			margin-top: 0;
+			font-weight: 600;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.chuyen-nghiep {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: 0 0;
+	padding: 50px 0;
+
+	&__wrap {
+		max-width: 735px;
+		margin-left: auto;
+		margin-right: auto;
+
+		h3 {
+			margin: 0px 0px 30px 0px;
+			text-transform: uppercase;
+			padding: 0px 0px 0px 0px;
+			font-weight: 500;
+			line-height: 1.2;
+			font-size: 28px;
+			text-align: center;
+			color: #fff;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			list-style: none;
+			color: #fff;
+			padding-left: 50px;
+			margin-bottom: 25px;
+			font-weight: 600;
+			position: relative;
+
+			&::before {
+				content: '';
+				display: block;
+				border: 0;
+				background-color: transparent;
+				background: url('images/w-tick.png') no-repeat center;
+				width: 40px;
+				height: 40px;
+				background-size: 35px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
+.luong-thuong {
+	position: relative;
+	padding: 50px 0;
+
+	h2.title {
+		@include title;
+	}
+
+	&__item {
+		text-align: center;
+	}
+}
+
+.form-ung-tuyen {
+	position: relative;
+	background-color: #b8292f;
+	padding: 50px 0;
+	color: #fff;
+	text-align: center;
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 31px;
+		margin-bottom: 0px;
+	}
+
+	p {
+		font-size: 16px;
+		color: #fff;
+	}
+
+	#test-form {
+		display: none;
+	}
+}
+
+.tuyen-dung {
+	position: relative;
+	padding: 50px 0;
+
+	&__item {
+		background: #fff;
+		padding: 20px;
+
+		&:nth-child(2n) {
+			background: #f5f5f5;
+			padding: 20px;
+		}
+
+		a.title-post {
+			color: #444;
+			font-weight: 600;
+		}
+
+		a.ung-tuyen {
+			position: relative;
+			display: block;
+			float: right;
+			background: #b8292f;
+			padding: 5px 10px;
+			color: #fff !important;
+			font-weight: 400 !important;
+			border-radius: 17px;
+			top: -5px;
+
+			&::before {
+				font-family: "FontAwesome";
+				font-weight: 900;
+				content: "\f0a9";
+				float: right;
+				margin-left: 7px;
+			}
+		}
+	}
+}
