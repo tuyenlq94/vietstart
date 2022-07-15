@@ -208,10 +208,6 @@ details> :last-child {
 	margin-bottom: 0;
 }
 
-details[open]>summary {
-	margin-bottom: 1.5rem;
-}
-
 summary {
 	display: list-item;
 	cursor: pointer;
