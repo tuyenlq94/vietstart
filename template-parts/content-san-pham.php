@@ -6,10 +6,20 @@
  *
  * @package Vietstart
  */
-
+$video = rwmb_meta('link_video_youtube');
+if(strpos($video,'=')){
+	$idvideo = substr($video, strpos($video,'=')+1,11);
+}else{
+	$idvideo = substr($video, strpos($video,'embed')+6,11);
+};
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<iframe width="831" height="467" src="https://www.youtube.com/embed/<?= $idvideo ?>"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+	</iframe>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
