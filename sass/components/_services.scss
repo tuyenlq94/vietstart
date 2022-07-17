@@ -1,0 +1,256 @@
+.banner-service {
+	color: #000;
+
+	p {
+		color: #000;
+	}
+
+	.popup-with-form {
+		background-color: #b8292f;
+	}
+}
+
+.service {
+	position: relative;
+	padding: 50px 0;
+
+	h2.title {
+		@include title;
+	}
+
+	&__wrap {
+		position: relative;
+		display: grid;
+		gap: 15px;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	&__item {
+		position: relative;
+		background: #b8292f;
+		text-align: center;
+	}
+
+	&__image {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	&__content {
+		background: #f5f5f5;
+		margin-top: 0;
+		padding-top: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+		color: #444;
+		padding-bottom: 20px;
+
+		a {
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.s-text {
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+
+		.l-text {
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+	}
+}
+
+.danh-muc {
+	position: relative;
+	background-color: #f5f5f5;
+	padding: 50px 0;
+
+	&__wrap {
+		background-color: #fff;
+	}
+
+	&__image {
+		position: relative;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		h2.title {
+			font-size: 30px;
+			display: block;
+			width: 100%;
+			padding: 15px;
+			margin-bottom: 0;
+			left: -15px;
+			padding-left: 30px;
+			background: linear-gradient(-45deg, #b8292f, transparent);
+			background: -webkit-linear-gradient(-45deg, #b8292f, transparent);
+			background: -o-linear-gradient(-45deg, #b8292f, transparent);
+			background: -moz-linear-gradient(-45deg, #b8292f, transparent);
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			right: 0;
+			color: #fff;
+			text-align: center;
+		}
+	}
+
+	&__content {
+		position: relative;
+		padding: 15px 0;
+
+		h3 {
+			position: relative;
+			margin-bottom: 30px;
+			padding-left: 40px;
+			font-size: 28px;
+			font-weight: 500;
+			line-height: 1.2;
+			margin-top: 0;
+
+			&::before {
+				content: "";
+				display: block;
+				width: 27px;
+				height: 19px;
+				background: url('images/dv-header.png') no-repeat;
+				float: left;
+				margin-right: 10px;
+				vertical-align: top;
+				top: 8px;
+				position: absolute;
+				left: 0;
+			}
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				list-style: none;
+			}
+
+			a {
+				position: relative;
+				display: block;
+				color: #444;
+				margin-bottom: 18px;
+				text-decoration: none;
+
+				&::before {
+					content: "";
+					display: block;
+					width: 20px;
+					height: 20px;
+					background: url('images/check2.png') no-repeat;
+					float: left;
+					margin-right: 10px;
+					vertical-align: top;
+				}
+			}
+		}
+	}
+
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 50px;
+
+		.book {
+			position: relative;
+			background-image: url('images/pattern1.jpg');
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: 100% 100%;
+			background-color: #ededed;
+			padding: 20px 0 0 20px;
+			width: 50%;
+		}
+
+		.marketing {
+			width: 50%;
+			position: relative;
+			background-image: url('images/pattern2.jpg');
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: 100% 100%;
+			background-color: #fff;
+			padding: 20px 0 0 20px;
+		}
+
+		.book,
+		.marketing {
+			a {
+				&::before {
+					background: url('images/check.png') no-repeat;
+				}
+			}
+		}
+	}
+}
+
+.service-type {
+	background-color: #f5f5f5;
+	padding: 50px 0;
+
+	h2.title {
+		@include title;
+	}
+
+	p.desciption {
+		text-align: center;
+		margin: 0;
+	}
+
+	&__wrap {
+		margin-top: 50px;
+	}
+
+	&__item {
+		margin-bottom: 30px;
+	}
+
+	&__inner {
+		background-color: #fff;
+		height: 100%;
+
+		a {
+			text-decoration: none;
+			text-align: center;
+			color: #b8292f;
+		}
+
+		h3 {
+			font-size: 18px;
+			margin: 0;
+			margin-top: 15px;
+			padding: 10px 15px;
+			transition: all 0.5s;
+		}
+
+		&:hover {
+			h3 {
+				cursor: pointer;
+				font-size: 19px;
+			}
+		}
+
+		img {
+			margin: auto;
+			display: table;
+			padding: 10px 0;
+		}
+	}
+
+}
