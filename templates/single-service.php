@@ -13,6 +13,7 @@ get_header();
 		get_template_part('template-parts/service/single');
 
 		get_template_part('template-parts/home/breadcrumbs');
+		get_template_part('template-parts/home/danh-gia');
 		get_template_part('template-parts/home/khac-biet');
 		get_template_part('template-parts/home/doi-tac');
 	endwhile;
