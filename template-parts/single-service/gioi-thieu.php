@@ -40,3 +40,4 @@ $content_about = rwmb_meta('content_gioi_thieu');
 </section>
 <?php get_template_part('template-parts/single-service/loi-ich');?>
 <?php get_template_part('template-parts/single-service/dich-vu');?>
+<?php get_template_part('template-parts/single-service/why');?>

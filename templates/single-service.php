@@ -11,7 +11,7 @@ get_header();
 		the_post();
 		get_template_part('template-parts/service/banner');
 		get_template_part('template-parts/service/single');
-
+		get_template_part('template-parts/service/product');
 		get_template_part('template-parts/home/breadcrumbs');
 		get_template_part('template-parts/home/danh-gia');
 		get_template_part('template-parts/home/khac-biet');
