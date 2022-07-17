@@ -1,0 +1,188 @@
+@media all and (max-width: 767px) {
+	.site-branding {
+		flex: 176px;
+		max-width: 176px;
+	}
+
+	.header-menu {
+		flex: 0 0 13%;
+		display: block;
+		position: absolute !important;
+		max-width: 50px;
+		right: 0;
+	}
+
+	.sp-search {
+		flex: 0 0 15%;
+		position: absolute;
+		right: 45px;
+		max-width: 100px;
+		padding-left: 0;
+	}
+
+	.is-open>.menu {
+		width: 250px;
+		left: auto;
+	}
+
+	.banner-item {
+		&__inner {
+			&::before {
+				content: '';
+				display: block;
+				background-color: rgba(184, 41, 47, 0.5);
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+		}
+
+		&__content {
+			color: #fff;
+
+			p {
+				color: #fff;
+			}
+		}
+	}
+
+	.services {
+		&__wrap {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.products {
+		&__inner {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.khac_biet {
+		&__item {
+			width: 50%;
+		}
+	}
+
+	.partner {
+		&__item {
+			width: 19.5%;
+		}
+	}
+
+	.service {
+		&__wrap {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			width: calc(50% - 15px);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			&:first-child {
+				width: 100%
+			}
+		}
+	}
+
+	.danh-muc {
+		&__inner {
+
+			.book,
+			.marketing {
+				width: 100%;
+			}
+		}
+	}
+
+	.menu-service .menu {
+		flex-wrap: wrap;
+		padding-left: 0;
+	}
+
+	.product-service {
+		&__wrap {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.archive-post,
+	.price {
+		&__products {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.blog-cat__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.tuyenngon ul li {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.products {
+		&__inner {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.khac_biet {
+		&__item {
+			width: 100%;
+		}
+	}
+
+	.partner {
+		&__item {
+			width: 24.375%;
+		}
+	}
+
+	.tai-sao {
+		&__item {
+			width: 100%;
+		}
+	}
+
+	.product-service,
+	.price {
+		&__wrap {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.archive-post {
+		&__products {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.blog-cat__list {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.archive-post__item {
+
+		.entry_thumbnail,
+		.entry_title {
+			width: 100%
+		}
+	}
+
+	.contact {
+
+		&__content,
+		&__form {
+			width: 100%
+		}
+	}
+}

@@ -27,7 +27,7 @@ $form_tu_van = rwmb_meta( 'form_tu_van', [ 'object_type' => 'setting' ], 'popup_
 			endforeach;
 			?>
 		</div>
-		<div class="services__inner">
+		<div class="services__inner row">
 			<div class="services__about col-4">
 				<?= wp_kses_post( wpautop( $gioi_thieu ) );?>
 				<div class="popup-tu-van ">

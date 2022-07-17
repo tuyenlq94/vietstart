@@ -123,6 +123,15 @@ jQuery( function ( $ ) {
 			autoplay: true,
 			rows: 0,
 			autoplaySpeed: 5000,
+			responsive: [
+				{
+					breakpoint: 600,
+					centerPadding: '0px',
+					settings: {
+						slidesToShow: 1,
+					}
+				},
+			]
 		} );
 		$( '.blog__wrap' ).slick( {
 			slidesToShow: 1,
