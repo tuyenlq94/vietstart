@@ -6,10 +6,6 @@
 <div class="header-search">
 	<div class="header-search__form">
 		<?php get_search_form(); ?>
-		<button class="search-close header-icon">
-			<span class="screen-reader-text">Close</span>
-			×
-		</button>
 	</div>
 </div>
 <div class="languages">

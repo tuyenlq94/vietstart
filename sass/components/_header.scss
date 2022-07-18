@@ -78,7 +78,8 @@
 		font-size: 14px;
 		text-transform: uppercase;
 
-		&.current-lang {
+		&.current-lang,
+		&:first-child {
 			color: var(--color-accent);
 		}
 	}
@@ -208,7 +209,7 @@
 		right: 0;
 		z-index: 10;
 		align-items: center;
-		padding: 0 15px 0 0;
+		padding: 0px 0 0;
 	}
 
 	.search-form {

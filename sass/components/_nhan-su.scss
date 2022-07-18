@@ -101,3 +101,31 @@
 		}
 	}
 }
+
+.video-noibo {
+	position: relative;
+
+	&__item {
+		iframe {
+			width: 100%;
+			height: 200px;
+		}
+
+		h3 {
+			margin: 0;
+			font-weight: 500;
+			line-height: 1.2;
+			font-size: 28px;
+
+			a {
+				color: #b8292f;
+				text-decoration: none;
+			}
+		}
+
+		a.see-more {
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+}

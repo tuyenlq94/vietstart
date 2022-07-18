@@ -85,27 +85,12 @@ jQuery( function ( $ ) {
 
 		button.addEventListener( 'click', e => {
 			e.preventDefault();
-			document.body.classList.add( 'header-search-open' );
+			document.body.classList.toggle( 'header-search-open' );
 			button.setAttribute( 'aria-expanded', 'true' );
 			input.focus();
 		} );
 	}
 
-	function closeSearch() {
-		const button = document.querySelector( '.search-close' ),
-			open = document.querySelector( '.search-open' );
-
-		if ( !button ) {
-			return;
-		}
-
-		button.addEventListener( 'click', e => {
-			e.preventDefault();
-			document.body.classList.remove( 'header-search-open' );
-			open.setAttribute( 'aria-expanded', 'false' );
-			open.focus();
-		} );
-	}
 
 	let slickSlide = () => {
 		$( '.banner' ).slick( {
@@ -251,7 +236,6 @@ jQuery( function ( $ ) {
 	toggleMenu();
 	toggleSubmenu();
 	openSearch();
-	closeSearch();
 	scrollToTop();
 	slickSlide();
 	maginicpopup();
