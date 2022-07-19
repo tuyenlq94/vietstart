@@ -1,0 +1,559 @@
+.about-tongthe {
+	position: relative;
+
+	&__content {
+		position: relative;
+
+		h3 {
+			color: #ff4f5a;
+			font-weight: 600;
+			margin-bottom: 60px;
+			font-size: 28px;
+		}
+
+		.alignleft {
+			float: left;
+			margin-right: 30px;
+		}
+
+		img {
+			margin-right: 30px;
+			position: absolute;
+			width: 154px;
+			left: -184px;
+		}
+
+		p {
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			margin-bottom: 20px;
+			text-align: justify;
+			margin-left: 184px;
+			width: calc(100% - 184px);
+
+			&.sppb-addon-title {
+				margin-bottom: 0;
+			}
+		}
+
+		.popup-with-form {
+			background-color: #b8292f;
+		}
+
+		#test-form {
+			display: none;
+		}
+	}
+}
+
+.quy-trinh-tt {
+	position: relative;
+
+	&__top {
+		position: relative;
+		padding: 0;
+		background: #ff4f5a;
+		background: linear-gradient(90deg, #de1f27, #fe505b);
+
+		h2.title {
+			margin: 0px 0px 30px 0px;
+			text-transform: none;
+			margin-bottom: 0 !important;
+			color: #fff;
+			text-align: left !important;
+			background: url('images/quy-trinh-icon.png') left no-repeat;
+			padding: 20px 0 20px 75px !important;
+		}
+	}
+
+	&__wrap {
+		position: relative;
+		padding: 50px 0;
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		img {
+			margin-right: 10px;
+		}
+
+		p {
+			width: calc(100% - 74px);
+			font-weight: 700;
+		}
+	}
+
+	&__image {
+		text-align: center;
+		position: relative;
+
+		img {
+			-webkit-animation: spin1 2s linear infinite;
+			animation: spin2 12s linear infinite;
+		}
+	}
+}
+
+@-webkit-keyframes spin2 {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spin2 {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+.hang-muc {
+	position: relative;
+	padding: 50px 0;
+	background-image: url('images/hang-muc-bg.jpg');
+	background-attachment: fixed;
+
+	h2.title {
+		color: #ff4f5a;
+		text-align: center;
+		position: relative;
+		margin-top: 20px;
+		margin-bottom: 70px;
+		display: inline-block;
+		width: 100%;
+		font-weight: 600;
+	}
+
+	&__image {
+		padding: 48px;
+		border-radius: 50%;
+		background: linear-gradient(90deg, #b8292f, #ff4f5a);
+		display: inline-block;
+		position: relative;
+	}
+
+	&__content {
+
+		&.content-left {
+			position: relative;
+			margin-right: -70px;
+			margin-top: -40px;
+			transition: all 0.5s;
+
+			a {
+				&:nth-child(1) {
+					margin-right: -50px;
+				}
+
+				&:nth-child(2) {
+					margin-right: -10px;
+				}
+
+				&:nth-child(3) {
+					margin-right: 25px;
+				}
+
+				&:nth-child(4) {
+					margin-right: 45px;
+				}
+
+				&:nth-child(5) {
+					margin-right: 55px;
+					;
+				}
+
+				&:nth-child(6) {
+					margin-right: 60px;
+				}
+
+				&:nth-child(7) {
+					margin-right: 55px;
+				}
+
+				&:nth-child(8) {
+					margin-right: 45px;
+				}
+
+				&:nth-child(9) {
+					margin-right: 25px;
+				}
+
+				&:nth-child(10) {
+					margin-right: -10px;
+				}
+
+				&:nth-child(11) {
+					margin-right: -50px;
+				}
+			}
+		}
+
+		&.content-right {
+			position: relative;
+			margin-left: -70px;
+			margin-top: -40px;
+			transition: all 0.5s;
+
+			a {
+				float: left;
+				text-align: left;
+
+				&:nth-child(1) {
+					margin-left: -50px;
+				}
+
+				&:nth-child(2) {
+					margin-left: -10px;
+				}
+
+				&:nth-child(3) {
+					margin-left: 25px;
+				}
+
+				&:nth-child(4) {
+					margin-left: 45px;
+				}
+
+				&:nth-child(5) {
+					margin-left: 55px;
+					;
+				}
+
+				&:nth-child(6) {
+					margin-left: 60px;
+				}
+
+				&:nth-child(7) {
+					margin-left: 55px;
+				}
+
+				&:nth-child(8) {
+					margin-left: 45px;
+				}
+
+				&:nth-child(9) {
+					margin-left: 25px;
+				}
+
+				&:nth-child(10) {
+					margin-left: -10px;
+				}
+
+				&:nth-child(11) {
+					margin-left: -50px;
+				}
+			}
+		}
+
+		a {
+			text-decoration: none;
+			display: inline-block;
+			text-align: right;
+			background: linear-gradient(90deg, #fe505b, #fe505b, #f86972);
+			margin-bottom: 10px;
+			width: auto;
+			clear: both;
+			float: right;
+			padding: 0 15px;
+			color: #fff;
+			font-weight: 600;
+			border-radius: 13px;
+			width: 80%;
+
+			&:hover {
+				color: #fff;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+.why-tt {
+	position: relative;
+	padding: 50px 0;
+	overflow: hidden;
+	background: #414040;
+
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: 800px;
+		height: 800px;
+		background: #464646;
+		position: absolute;
+		bottom: -400px;
+		overflow: hidden;
+		transform: rotate(45deg);
+		left: -800px;
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		width: 1000px;
+		height: 1000px;
+		background: #313030;
+		position: absolute;
+		top: -500px;
+		overflow: hidden;
+		transform: rotate(-45deg);
+		right: -800px;
+	}
+
+	h2.title {
+		color: #ff4f5a;
+		margin-bottom: 0;
+		text-align: left;
+		background: url('images/tai-sao.png') left no-repeat;
+		padding: 20px 0 20px 75px;
+	}
+
+	&__wrap {
+		position: relative;
+		margin-top: 20px;
+	}
+
+	&__inner {
+		background: #ef5261;
+		padding: 15px;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+
+		#test-form {
+			display: none;
+		}
+	}
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		position: relative;
+
+
+		h3 {
+			width: calc(100% - 94px);
+			color: #fff;
+			padding-left: 15px;
+		}
+	}
+}
+
+.chien-dich {
+	position: relative;
+	padding: 50px 0;
+	background: #f5f5f5;
+
+	h2.title {
+		text-align: center;
+		margin-bottom: 60px;
+		font-weight: 600;
+		color: #333;
+		font-size: 28px;
+		margin: 0 0 50px 0;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	&__inner {
+		background-color: #fff;
+		height: 100%;
+
+		.entry-title {
+			padding: 15px 15px;
+
+			a {
+				color: #b8292f;
+				margin: 10px 20px;
+				display: block;
+				font-size: 21px;
+			}
+
+			p {
+				margin-bottom: 0;
+				font-size: 15px;
+				color: #555;
+			}
+		}
+	}
+}
+
+.ke-hoach {
+	position: relative;
+	padding: 50px 0;
+	background-image: url('images/ke-hoach-tong-the-la-gi.webp');
+	background-repeat: no-repeat;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		top: 0;
+		opacity: 0.8;
+	}
+
+	.container {
+		position: relative;
+	}
+
+	h3 {
+		color: #d01a23;
+		font-weight: 600;
+		margin-bottom: 40px;
+		text-align: center;
+		font-size: 28px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		position: relative;
+		margin-bottom: 20px;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 44px;
+			height: 44px;
+			background-image: url('images/check-green.png');
+			float: left;
+			margin-right: 15px;
+			background-size: contain;
+		}
+	}
+}
+
+.why_lkh {
+	position: relative;
+	padding: 50px 0;
+	background: #f5f5f5;
+
+	&::before {
+		content: "";
+		background: url('images/tai-sao-bg11.webp') no-repeat bottom left;
+		width: 50%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	&::after {
+		content: "";
+		background: url('images/tai-sao-bg2.webp') no-repeat top right;
+		width: 50%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+
+	h2.title {
+		color: #d01a23;
+		text-align: center;
+		margin-bottom: 50px;
+		font-weight: 600;
+	}
+
+	&__inner {
+		text-align: center;
+	}
+}
+
+.buoc-lkh {
+	position: relative;
+	padding: 50px 0;
+
+	h2.title {
+		@include title;
+	}
+
+	p.descrip {
+		text-align: center;
+	}
+
+	&__wrap {
+		position: relative;
+		padding-top: 50px;
+	}
+
+	&__item {
+		&:nth-child(2n) {
+			.buoc-lkh__image {
+				order: 2;
+			}
+
+			.buoc-lkh__content {
+				order: 1;
+			}
+		}
+	}
+
+	&__content {
+		h3 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #b8292f;
+		}
+
+		p {
+			margin-left: 28px;
+			position: relative;
+			text-align: justify;
+
+			&::before {
+				position: absolute;
+				content: "";
+				background: url('images/tick.png') no-repeat left;
+				display: block;
+				width: 18px;
+				height: 20px;
+				left: -28px;
+				margin-right: 15px;
+				background-size: 18px;
+				top: 5px;
+			}
+		}
+	}
+}
