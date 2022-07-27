@@ -12,7 +12,7 @@
 
 .menu-service {
 	.menu {
-		background: linear-gradient(45deg, #b8292f 0%, #ed5f6d 100%);
+		background: linear-gradient(45deg, var(--color-accent) 0%, #ed5f6d 100%);
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -67,8 +67,8 @@
 			.steps {
 				position: absolute;
 				display: block;
-				border-top: 2px solid #b8292f;
-				border-right: 2px dashed #b8292f;
+				border-top: 2px solid var(--color-accent);
+				border-right: 2px dashed var(--color-accent);
 				width: 50px;
 				border-radius: 0px 10px 0px 0px;
 				height: 130px;
@@ -86,14 +86,14 @@
 					left: -5px;
 					position: absolute;
 					top: -16px;
-					color: #b8292f;
+					color: var(--color-accent);
 					font-size: 21px;
 				}
 			}
 
 			.steps-content {
 				width: 100%;
-				color: #b8292f;
+				color: var(--color-accent);
 				min-height: auto;
 				margin-bottom: 30px;
 				margin-top: 181px;
@@ -126,7 +126,7 @@
 			font-size: 21px;
 			font-weight: 700;
 			position: relative;
-			color: #b8292f;
+			color: var(--color-accent);
 			text-transform: uppercase;
 
 			&::before {
@@ -195,7 +195,7 @@
 	}
 
 	.popup-with-form {
-		background: #b8292f;
+		background: var(--color-accent);
 	}
 
 	#test-form {
@@ -252,7 +252,7 @@
 
 	&__inner {
 		padding: 13px 20px;
-		border-left: 2px solid #b8292f;
+		border-left: 2px solid var(--color-accent);
 
 		h2 {
 			margin: 0 0 15px;
@@ -276,27 +276,27 @@
 				left: -29px;
 				width: 15px;
 				height: 15px;
-				background: #d94a55;
+				background: var(--color-accent);
 				border-radius: 50%;
 				transition: all 0.5s;
 				top: 15px;
 			}
 
 			&:hover {
-				color: #b8292f;
+				color: var(--color-accent);
 
 				&::before {
 					width: 20px;
 					height: 20px;
 					left: -31px;
-					background: #b82a30;
+					background: var(--color-accent);
 				}
 			}
 		}
 	}
 
 	.popup-with-form {
-		background: #b8292f;
+		background: var(--color-accent);
 	}
 
 	#test-form {
@@ -309,7 +309,7 @@
 	padding: 50px 0;
 
 	h2.title {
-		background: linear-gradient(45deg, #b8292f 0%, #ed5f6d 100%);
+		background: linear-gradient(45deg, var(--color-accent) 0%, #ed5f6d 100%);
 		padding: 5px 20px;
 		margin-bottom: 30px;
 		color: #fff;

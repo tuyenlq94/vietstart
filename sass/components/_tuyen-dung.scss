@@ -1,6 +1,6 @@
 .banner-video {
 	position: relative;
-	background-color: #b8292f;
+	background-color: var(--color-accent);
 
 	&__video {
 		video {
@@ -137,7 +137,7 @@
 
 .form-ung-tuyen {
 	position: relative;
-	background-color: #b8292f;
+	background-color: var(--color-accent);
 	padding: 50px 0;
 	color: #fff;
 	text-align: center;
@@ -180,7 +180,7 @@
 			position: relative;
 			display: block;
 			float: right;
-			background: #b8292f;
+			background: var(--color-accent);
 			padding: 5px 10px;
 			color: #fff !important;
 			font-weight: 400 !important;
@@ -233,7 +233,7 @@
 					line-height: 50px;
 					margin-left: auto;
 					margin-right: auto;
-					background: #b8292f;
+					background: var(--color-accent);
 					border-radius: 50%;
 					color: #fff;
 					font-size: 30px;
@@ -249,7 +249,7 @@
 				position: absolute;
 				width: 2px;
 				height: 20%;
-				border-left: 1px dashed #b8292f;
+				border-left: 1px dashed var(--color-accent);
 				left: 49%;
 			}
 		}

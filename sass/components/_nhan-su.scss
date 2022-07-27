@@ -32,7 +32,7 @@
 		padding: 20px;
 		text-align: center !important;
 		color: #fff;
-		background: rgba(184, 41, 47, 0.8);
+		background: rgba(3, 83, 197, 0.8);
 		position: absolute;
 		bottom: -100px;
 		transition: all 0.5s;
@@ -118,7 +118,7 @@
 			font-size: 28px;
 
 			a {
-				color: #b8292f;
+				color: var(--color-accent);
 				text-decoration: none;
 			}
 		}
