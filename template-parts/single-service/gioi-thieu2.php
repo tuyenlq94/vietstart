@@ -1,6 +1,12 @@
 <?php
 $image_about = rwmb_meta('image_gioi_thieu');
 $content_about = rwmb_meta('content_gioi_thieu');
+$video = rwmb_meta('video_gioi_thieu');
+if(strpos($video,'=')){
+	$idvideo = substr($video, strpos($video,'=')+1,11);
+}else{
+	$idvideo = substr($video, strpos($video,'embed')+6,11);
+};
 ?>
 <section class="about-service">
 	<div class="container">
@@ -17,7 +23,17 @@ $content_about = rwmb_meta('content_gioi_thieu');
 			</div>
 			<div class="about-single__item col-6">
 				<div class="about-single__content">
-					<?= wpautop($content_about);?>
+					<?= wp_kses_post(wpautop($content_about))?>
+					<?php
+					if( $video != '' ) {
+						?>
+						<iframe width="831" height="467" src="https://www.youtube.com/embed/<?= $idvideo ?>"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+						<?php
+					}
+					?>
 				</div>
 			</div>
 		</div>
