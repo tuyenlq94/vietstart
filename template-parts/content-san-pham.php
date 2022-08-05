@@ -6,20 +6,27 @@
  *
  * @package Vietstart
  */
-$video = rwmb_meta('link_video_youtube');
-if(strpos($video,'=')){
-	$idvideo = substr($video, strpos($video,'=')+1,11);
-}else{
-	$idvideo = substr($video, strpos($video,'embed')+6,11);
+$video = rwmb_meta( 'link_video_youtube' );
+if ( strpos( $video, '=' ) ) {
+	$idvideo = substr( $video, strpos( $video, '=' ) + 1, 11 );
+} else {
+	$idvideo = substr( $video, strpos( $video, 'embed' ) + 6, 11 );
 };
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php
+	if ( $video != '' ) {
+		?>
+
 	<iframe width="831" height="467" src="https://www.youtube.com/embed/<?= $idvideo ?>"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen>
 	</iframe>
+		<?php
+	}
+	?>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -30,7 +37,7 @@ if(strpos($video,'=')){
 		?>
 	</header><!-- .entry-header -->
 
-	<?php //vietstart_post_thumbnail(); ?>
+	<?php // vietstart_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
